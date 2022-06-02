@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <!-- ~1~ Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) @1@ -->
+    <!-- <PublishRepositoryUrl>true</PublishRepositoryUrl> -->
+    <!-- -->
+    <!-- ~1~ Optional: Embed source files that are not tracked by the source control manager in the PDB @1@ -->
+    <!-- <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
+    <!-- -->
+    <!-- ~1~ Optional: Include the PDB in the built .nupkg @1@ -->
+    <!-- <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+
+    <!-- <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" /> -->
+  </ItemGroup>
+
+</Project>
